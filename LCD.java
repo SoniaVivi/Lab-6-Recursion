@@ -5,9 +5,9 @@
 /*
   The program is intended to calculate the Least common denominator.
 */
-// FOR EXTRA CREDIT: Formartted Pascal's triangle with spaces and did both
+// FOR EXTRA CREDIT: Formartted Pascal's triangle with recursive spaces
+//                   and did both
 //                   LCD and Pascal recursively.
-
 /*
   Sources: https://en.wikipedia.org/wiki/Greatest_common_divisor#Euclidean_algorithm
            https://en.wikipedia.org/wiki/Least_common_multiple#Calculation

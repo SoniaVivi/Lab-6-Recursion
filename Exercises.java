@@ -6,7 +6,8 @@
   The following excises is to identify and fix the problems code snippets that
   was provided.
 */
-// FOR EXTRA CREDIT: Formartted Pascal's triangle with spaces and did both
+// FOR EXTRA CREDIT: Formartted Pascal's triangle with recursive spaces
+//                   and did both
 //                   LCD and Pascal recursively.
 
 public class Exercises {

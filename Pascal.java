@@ -5,11 +5,10 @@
 /*
   The program is to print Pascal's triangle to the console
 */
-// FOR EXTRA CREDIT: Formartted Pascal's triangle with spaces and did both
+// FOR EXTRA CREDIT: Formartted Pascal's triangle with recursive spaces
+//                   and did both
 //                   LCD and Pascal recursively.
 // Sources: https://en.wikipedia.org/wiki/Pascal's_triangle#Calculating_a_row_or_diagonal_by_itself
-
-import java.util.*;
 
 public class Pascal {
   public static void main(String[] args) {
@@ -17,11 +16,11 @@ public class Pascal {
   }
 
   public static void calculatePascal(int rows, int prevRows) {
-    String buffer = "  ".repeat(prevRows);
+    String buffer = repeatSpaces(prevRows);
 
     if (rows == 0) {
       System.out.print(buffer);
-      System.out.print("1");
+      System.out.print(" 1");
       System.out.println();
 
     } else {
@@ -49,5 +48,13 @@ public class Pascal {
 
     return calc;
 
+  }
+
+  public static String repeatSpaces(int count) {
+    if (count == 0) {
+      return "";
+    }
+
+    return " " + repeatSpaces(count - 1);
   }
 }
